@@ -4,6 +4,59 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: #f21222;
+body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+}
+
+main {
+    width: 80%;
+}
+
+aside {
+    width: 18%;
+}
+
+aside > * + * {
+    margin-top: 24px;
+}
+
+#videoPlayer {
+    max-width: 640px;
+    max-height: 480px;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.settings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.button {
+    padding: 8px 12px;
+    background: #ffffff;
+    border: 1px solid #2b2b2b;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .1s;
+}
+
+.button:hover {
+    background: #eeeeee;
+}
+
+.button:active {
+    background: #e8e8e8;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
 }
